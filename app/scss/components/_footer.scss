@@ -1,0 +1,72 @@
+.footer {
+  background-color: $footer;
+  color: $background;
+
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 30px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  &__link {
+    border-radius: 4px;
+    transition: color 0.3s, outline 0.3s, opacity 0.3s;
+    &:hover {
+      color: $accent;
+    }
+
+    &:focus {
+      outline: 1px solid $accent;
+      outline-offset: 6px;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  &__social-link {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: $background;
+    transition: fill 0.3s, background-color 0.3s, outline 0.3s, box-shadow 0.3s;
+
+    &:hover {
+      fill: $background;
+      background-color: $accent;
+    }
+
+    &:focus {
+      outline-offset: 4px;
+      outline: 1px solid $accent;
+    }
+
+    &:active {
+      fill: $background;
+      background-color: $accent;
+      box-shadow: inset 0 4px 4px 0 $title;
+    }
+  }
+}
