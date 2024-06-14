@@ -82,18 +82,19 @@
           </p>
         </div>
         <div class="modal">
-          <form class="feedback-form" id="form" action="#" >
+          <form class="feedback-form" id="form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="50820372-d63f-46d2-af1f-ca06188d0231">
             <h2 class="feedback-form__title">
               замовити дзвінок
             </h2>
             <p class="feedback-form__text">
               консультація нашого фахівця безкоштовна
             </p>
-            <label for="forName" class="feedback-form__label">
-              <input id="forName" class="feedback-form__input" type="text" name="name" placeholder="Ім’я (не обов’язково)">
+            <label class="feedback-form__label">
+              <input class="feedback-form__input" type="text" name="name" placeholder="Ім’я (не обов’язково)" autocomplete="off">
             </label>
-            <label for="forPhone" class="feedback-form__label">
-              <input id="forPhone" class="feedback-form__input _req _phone" type="tel" name="tel" placeholder="Телефон (у форматі +38 0** *** ** **)" required>
+            <label class="feedback-form__label">
+              <input class="feedback-form__input" type="tel" name="tel" placeholder="Телефон (у форматі +38 0** *** ** **)" autocomplete="off" required>
             </label>
             <button class="button" type="submit">Отримати консультацію</button>
           </form>
