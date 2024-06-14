@@ -73,7 +73,7 @@
     <h1 class="visually-hidden">
       Транспортна компанія НаДворік
     </h1>
-    <section class="hero">
+    <section class="hero" id="hero">
       <img class="hero__img" src="images/image-bg.jpeg" width="100%" height="700" "вантажівка виїджає зі стоянки">
       <div class="container">
         <div class="hero__content">
@@ -82,25 +82,18 @@
           </p>
         </div>
         <div class="modal">
-          <form class="feedback-form" action="#">
+          <form class="feedback-form" id="form" action="#" >
             <h2 class="feedback-form__title">
               замовити дзвінок
             </h2>
             <p class="feedback-form__text">
               консультація нашого фахівця безкоштовна
             </p>
-            <label class="feedback-form__label">
-              <input class="feedback-form__input" type="text" name="name" placeholder="Ім’я (не обов’язково)">
-              <span class="visually-hidden">
-                введіть ваше ім'я
-              </span>
+            <label for="forName" class="feedback-form__label">
+              <input id="forName" class="feedback-form__input" type="text" name="name" placeholder="Ім’я (не обов’язково)">
             </label>
-            <label class="feedback-form__label">
-              <input class="feedback-form__input" type="tel" name="tel" placeholder="телефон (у форматі 000 000 00 00)"
-                required>
-              <span class="visually-hidden">
-                введіть номер телефону
-              </span>
+            <label for="forPhone" class="feedback-form__label">
+              <input id="forPhone" class="feedback-form__input _req _phone" type="tel" name="tel" placeholder="Телефон (у форматі +38 0** *** ** **)" required>
             </label>
             <button class="button" type="submit">Отримати консультацію</button>
           </form>
@@ -225,7 +218,7 @@
               </p>
             </div>
           </div>
-          <a href="#home" class="skills__link">
+          <a href="#hero" class="skills__link">
             <button class="button" type="submit">
               Отримати консультацію
             </button>
@@ -325,6 +318,7 @@
     </div>
   </footer>
   <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
